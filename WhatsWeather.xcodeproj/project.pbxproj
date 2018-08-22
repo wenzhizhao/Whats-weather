@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		F1D394CA2122A1C5006F0EBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D394C92122A1C5006F0EBA /* AppDelegate.swift */; };
-		F1D394CC2122A1C5006F0EBA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D394CB2122A1C5006F0EBA /* ViewController.swift */; };
+		F1D394CC2122A1C5006F0EBA /* WWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D394CB2122A1C5006F0EBA /* WWViewController.swift */; };
 		F1D394CF2122A1C5006F0EBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1D394CD2122A1C5006F0EBA /* Main.storyboard */; };
 		F1D394D12122A1C8006F0EBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1D394D02122A1C8006F0EBA /* Assets.xcassets */; };
 		F1D394D42122A1C8006F0EBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1D394D22122A1C8006F0EBA /* LaunchScreen.storyboard */; };
 		F1D394DF2122A1C8006F0EBA /* WhatsWeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D394DE2122A1C8006F0EBA /* WhatsWeatherTests.swift */; };
+		F1D394EA2122A21F006F0EBA /* WWFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D394E92122A21F006F0EBA /* WWFetcher.swift */; };
+		F1D394EC2123BD0F006F0EBA /* WWConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D394EB2123BD0F006F0EBA /* WWConstants.swift */; };
+		F1D394EE2123CF8A006F0EBA /* WWDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D394ED2123CF8A006F0EBA /* WWDataModel.swift */; };
+		F1E098E82128D4E100C39E2B /* WWTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E098E72128D4E100C39E2B /* WWTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +32,7 @@
 /* Begin PBXFileReference section */
 		F1D394C62122A1C5006F0EBA /* WhatsWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatsWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1D394C92122A1C5006F0EBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F1D394CB2122A1C5006F0EBA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F1D394CB2122A1C5006F0EBA /* WWViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWViewController.swift; sourceTree = "<group>"; };
 		F1D394CE2122A1C5006F0EBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F1D394D02122A1C8006F0EBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1D394D32122A1C8006F0EBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +40,10 @@
 		F1D394DA2122A1C8006F0EBA /* WhatsWeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhatsWeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1D394DE2122A1C8006F0EBA /* WhatsWeatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsWeatherTests.swift; sourceTree = "<group>"; };
 		F1D394E02122A1C8006F0EBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1D394E92122A21F006F0EBA /* WWFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWFetcher.swift; sourceTree = "<group>"; };
+		F1D394EB2123BD0F006F0EBA /* WWConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWConstants.swift; sourceTree = "<group>"; };
+		F1D394ED2123CF8A006F0EBA /* WWDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWDataModel.swift; sourceTree = "<group>"; };
+		F1E098E72128D4E100C39E2B /* WWTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,11 +86,15 @@
 			isa = PBXGroup;
 			children = (
 				F1D394C92122A1C5006F0EBA /* AppDelegate.swift */,
-				F1D394CB2122A1C5006F0EBA /* ViewController.swift */,
+				F1D394CB2122A1C5006F0EBA /* WWViewController.swift */,
 				F1D394CD2122A1C5006F0EBA /* Main.storyboard */,
 				F1D394D02122A1C8006F0EBA /* Assets.xcassets */,
 				F1D394D22122A1C8006F0EBA /* LaunchScreen.storyboard */,
 				F1D394D52122A1C8006F0EBA /* Info.plist */,
+				F1D394E92122A21F006F0EBA /* WWFetcher.swift */,
+				F1D394EB2123BD0F006F0EBA /* WWConstants.swift */,
+				F1D394ED2123CF8A006F0EBA /* WWDataModel.swift */,
+				F1E098E72128D4E100C39E2B /* WWTableViewCell.swift */,
 			);
 			path = WhatsWeather;
 			sourceTree = "<group>";
@@ -197,8 +209,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1D394CC2122A1C5006F0EBA /* ViewController.swift in Sources */,
+				F1D394EA2122A21F006F0EBA /* WWFetcher.swift in Sources */,
+				F1D394CC2122A1C5006F0EBA /* WWViewController.swift in Sources */,
+				F1D394EC2123BD0F006F0EBA /* WWConstants.swift in Sources */,
+				F1D394EE2123CF8A006F0EBA /* WWDataModel.swift in Sources */,
 				F1D394CA2122A1C5006F0EBA /* AppDelegate.swift in Sources */,
+				F1E098E82128D4E100C39E2B /* WWTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +377,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 58PNJEW9E6;
 				INFOPLIST_FILE = WhatsWeather/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -379,6 +396,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 58PNJEW9E6;
 				INFOPLIST_FILE = WhatsWeather/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
